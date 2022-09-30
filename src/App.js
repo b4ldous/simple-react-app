@@ -10,7 +10,7 @@ function App() {
   );
 }
 function callApi() {
-  fetch('https://simple-node-server-nw.herokuapp.com/', { method: 'GET' })
+  fetch('https://simple-node-server-nw.herokuapp.com', { method: 'GET' })
       .then(data => data.json())
       .then(json => alert(JSON.stringify(json)))
 }
